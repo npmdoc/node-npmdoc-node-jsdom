@@ -1,0 +1,1125 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/darrylwest/node-jsdom"
+
+    >node-jsdom (v3.1.5)</a>
+</h1>
+<h4>A JavaScript implementation of the DOM and HTML standards cloned from the original jsdom branch 3.x</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-jsdom">module node-jsdom</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">boolean <span class="apidocSignatureSpan">node-jsdom.</span>debugMode</span>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.applyDocumentFeatures">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>applyDocumentFeatures
+            <span class="apidocSignatureSpan">(doc, features)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.env">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>env
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.getVirtualConsole">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>getVirtualConsole
+            <span class="apidocSignatureSpan">(window)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.jQueryify">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>jQueryify
+            <span class="apidocSignatureSpan">(window, jqueryUrl, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.jsdom">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>jsdom
+            <span class="apidocSignatureSpan">(html, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.serializeDocument">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>serializeDocument
+            <span class="apidocSignatureSpan">(doc)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-jsdom.</span>availableDocumentFeatures</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-jsdom.</span>defaultDocumentFeatures</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-jsdom.applyDocumentFeatures">module node-jsdom.applyDocumentFeatures</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.applyDocumentFeatures.applyDocumentFeatures">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>applyDocumentFeatures
+            <span class="apidocSignatureSpan">(doc, features)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-jsdom.env">module node-jsdom.env</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.env.env">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>env
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-jsdom.getVirtualConsole">module node-jsdom.getVirtualConsole</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.getVirtualConsole.getVirtualConsole">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>getVirtualConsole
+            <span class="apidocSignatureSpan">(window)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-jsdom.jQueryify">module node-jsdom.jQueryify</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.jQueryify.jQueryify">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>jQueryify
+            <span class="apidocSignatureSpan">(window, jqueryUrl, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-jsdom.jsdom">module node-jsdom.jsdom</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.jsdom.jsdom">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>jsdom
+            <span class="apidocSignatureSpan">(html, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.jsdom.env">
+            function <span class="apidocSignatureSpan">node-jsdom.jsdom.</span>env
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.jsdom.jQueryify">
+            function <span class="apidocSignatureSpan">node-jsdom.jsdom.</span>jQueryify
+            <span class="apidocSignatureSpan">(window, jqueryUrl, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-jsdom.serializeDocument">module node-jsdom.serializeDocument</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-jsdom.serializeDocument.serializeDocument">
+            function <span class="apidocSignatureSpan">node-jsdom.</span>serializeDocument
+            <span class="apidocSignatureSpan">(doc)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-jsdom" id="apidoc.module.node-jsdom">module node-jsdom</a></h1>
+
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.applyDocumentFeatures" id="apidoc.element.node-jsdom.applyDocumentFeatures">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>applyDocumentFeatures
+        <span class="apidocSignatureSpan">(doc, features)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">applyDocumentFeatures = function (doc, features) {
+  var i, maxFeatures = exports.availableDocumentFeatures.length,
+      defaultFeatures = exports.defaultDocumentFeatures,
+      j,
+      k,
+      featureName,
+      featureSource;
+
+  features = features || {};
+
+  for (i=0; i&#x3c;maxFeatures; i++) {
+    featureName = exports.availableDocumentFeatures[i];
+    if (typeof features[featureName] !== &#x27;undefined&#x27;) {
+      featureSource = features[featureName];
+    // We have to check the lowercase version also because the Document feature
+    // methods convert everything to lowercase.
+    } else if (typeof features[featureName.toLowerCase()] !== &#x27;undefined&#x27;) {
+      featureSource = features[featureName.toLowerCase()];
+    } else if (defaultFeatures[featureName]) {
+      featureSource = defaultFeatures[featureName];
+    } else {
+      continue;
+    }
+
+    doc.implementation._removeFeature(featureName);
+
+    if (typeof featureSource !== &#x27;undefined&#x27;) {
+      if (featureSource instanceof Array) {
+        k = featureSource.length;
+        for (j=0; j&#x3c;k; j++) {
+          doc.implementation._addFeature(featureName, featureSource[j]);
+        }
+      } else {
+        doc.implementation._addFeature(featureName, featureSource);
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.env" id="apidoc.element.node-jsdom.env">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>env
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">env = function () {
+  var config = getConfigFromArguments(arguments);
+
+  if (config.file &#x26;&#x26; canReadFilesFromFS) {
+    fs.readFile(config.file, &#x27;utf-8&#x27;, function (err, text) {
+      if (err) {
+        if (config.created) {
+          config.created(err);
+        }
+        if (config.done) {
+          config.done([err]);
+        }
+        return;
+      }
+
+      setParsingModeFromExtension(config, config.file);
+
+      config.html = text;
+      processHTML(config);
+    });
+  } else if (config.html !== undefined) {
+    processHTML(config);
+  } else if (config.url) {
+    handleUrl(config);
+  } else if (config.somethingToAutodetect !== undefined) {
+    var url = URL.parse(config.somethingToAutodetect);
+    if (url.protocol &#x26;&#x26; url.hostname) {
+      config.url = config.somethingToAutodetect;
+      handleUrl(config.somethingToAutodetect);
+    } else if (canReadFilesFromFS) {
+      fs.readFile(config.somethingToAutodetect, &#x27;utf-8&#x27;, function (err, text) {
+        if (err) {
+          // the toString() test is because in Node.js, there is no proper code for this.
+          // This is fixed in io.js: https://github.com/iojs/io.js/issues/517 so:
+          // TODO: remove when we start requiring io.js
+          if (err.code === &#x27;ENOENT&#x27; || err.code === &#x27;ENAMETOOLONG&#x27;
+          	|| (err.toString() == &#x27;Error: Path must be a string without null bytes.&#x27;)
+          ) {
+            config.html = config.somethingToAutodetect;
+            processHTML(config);
+          } else {
+            if (config.created) {
+              config.created(err);
+            }
+            if (config.done) {
+              config.done([err]);
+            }
+          }
+        } else {
+          setParsingModeFromExtension(config, config.somethingToAutodetect);
+
+          config.html = text;
+          config.url = toFileUrl(config.somethingToAutodetect);
+          processHTML(config);
+        }
+      });
+    } else {
+      config.html = config.somethingToAutodetect;
+      processHTML(config);
+    }
+  }
+
+  function handleUrl() {
+    var options = {
+      uri: config.url,
+      encoding: config.encoding || &#x27;utf8&#x27;,
+      headers: config.headers || {},
+      proxy: config.proxy || null,
+      jar: config.jar !== undefined ? config.jar : true
+    };
+
+    request(options, function (err, res, responseText) {
+      if (err) {
+        if (config.created) {
+          config.created(err);
+        }
+        if (config.done) {
+          config.done([err]);
+        }
+        return;
+      }
+
+      // The use of `res.request.uri.href` ensures that `window.location.href`
+      // is updated when `request` follows redirects.
+      config.html = responseText;
+      config.url = res.request.uri.href;
+
+      if (config.parsingMode === &#x22;auto&#x22; &#x26;&#x26; (
+        res.headers[&#x22;content-type&#x22;] === &#x22;application/xml&#x22; ||
+        res.headers[&#x22;content-type&#x22;] === &#x22;text/xml&#x22; ||
+        res.headers[&#x22;content-type&#x22;] === &#x22;application/xhtml+xml&#x22;)) {
+        config.parsingMode = &#x22;xml&#x22;;
+      }
+
+      processHTML(config);
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+You can use it with a URL
+
+```js
+// Count all of the links from the Node.js build page
+var jsdom = require(&#x22;node-jsdom&#x22;);
+
+jsdom.<span class="apidocCodeKeywordSpan">env</span>(
+  &#x22;http://nodejs.org/dist/&#x22;,
+  [&#x22;http://code.jquery.com/jquery.js&#x22;],
+  function (errors, window) {
+    console.log(&#x22;there have been&#x22;, window.$(&#x22;a&#x22;).length, &#x22;nodejs releases!&#x22;);
+  }
+);
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.getVirtualConsole" id="apidoc.element.node-jsdom.getVirtualConsole">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>getVirtualConsole
+        <span class="apidocSignatureSpan">(window)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getVirtualConsole = function (window) {
+  return window._virtualConsole;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Forward a window&#x27;s console output to the Node.js console
+
+```js
+var jsdom = require(&#x22;node-jsdom&#x22;);
+var window = jsdom.jsdom().parentWindow;
+
+jsdom.<span class="apidocCodeKeywordSpan">getVirtualConsole</span>(window).sendTo(console);
+```
+
+#### Get an event emitter for a window&#x27;s console
+
+```js
+var jsdom = require(&#x22;node-jsdom&#x22;);
+var window = jsdom.jsdom().parentWindow;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.jQueryify" id="apidoc.element.node-jsdom.jQueryify">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>jQueryify
+        <span class="apidocSignatureSpan">(window, jqueryUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">jQueryify = function (window, jqueryUrl, callback) {
+  if (!window || !window.document) {
+    return;
+  }
+
+  var features = window.document.implementation._features;
+  window.document.implementation._addFeature(&#x27;FetchExternalResources&#x27;, [&#x27;script&#x27;]);
+  window.document.implementation._addFeature(&#x27;ProcessExternalResources&#x27;, [&#x27;script&#x27;]);
+  window.document.implementation._addFeature(&#x27;MutationEvents&#x27;, [&#x27;2.0&#x27;]);
+
+  var scriptEl = window.document.createElement(&#x27;script&#x27;);
+  scriptEl.className = &#x27;jsdom&#x27;;
+  scriptEl.src = jqueryUrl;
+  scriptEl.onload = scriptEl.onerror = function () {
+    window.document.implementation._features = features;
+
+    if (callback) {
+      callback(window, window.jQuery);
+    }
+  };
+
+  window.document.body.appendChild(scriptEl);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### jQueryify
+
+```js
+var jsdom = require(&#x22;node-jsdom&#x22;);
+var window = jsdom.jsdom().parentWindow;
+
+jsdom.<span class="apidocCodeKeywordSpan">jQueryify</span>(window, &#x22;http://code.jquery.com/jquery-2.1.1.js&#x22;, function () {
+  window.$(&#x22;body&#x22;).append(&#x27;&#x3c;div class=&#x22;testing&#x22;&#x3e;Hello World, It works&#x3c;/div&#x3e;&#x27;);
+
+  console.log(window.$(&#x22;.testing&#x22;).text());
+});
+```
+
+### Passing objects to scripts inside the page
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.jsdom" id="apidoc.element.node-jsdom.jsdom">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>jsdom
+        <span class="apidocSignatureSpan">(html, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">jsdom = function (html, options) {
+  if (options === undefined) {
+    options = {};
+  }
+  if (options.parsingMode === undefined || options.parsingMode === &#x27;auto&#x27;) {
+    options.parsingMode = &#x27;html&#x27;;
+  }
+
+  var browser = browserAugmentation(dom, options);
+  var doc = new browser.HTMLDocument(options);
+
+  if (options.created) {
+    options.created(null, doc.parentWindow);
+  }
+
+  features.applyDocumentFeatures(doc, options.features);
+
+  if (html === undefined) {
+    html = &#x27;&#x27;;
+  }
+  html = String(html);
+  doc.write(html);
+
+  if (doc.close &#x26;&#x26; !options.deferClose) {
+    doc.close();
+  }
+
+  return doc;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Dealing with asynchronous script loading
+
+If you load scripts asynchronously, e.g. with a module loader like RequireJS, none of the above hooks will really give you what
+you want. There&#x27;s nothing, either in jsdom or in browsers, to say &#x22;notify me after all asynchronous loads have completed
+.&#x22; The solution is to use the mechanisms of the framework you are using to notify about this finishing up. E.g., with RequireJS
+, you could do
+
+```js
+// On the Node side:
+var window = jsdom.<span class="apidocCodeKeywordSpan">jsdom</span>(...).parentWindow;
+window.onModulesLoaded = function () {
+  console.log(&#x22;ready to roll!&#x22;);
+};
+```
+
+```html
+&#x3c;!-- Inside the HTML you supply to jsdom --&#x3e;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.serializeDocument" id="apidoc.element.node-jsdom.serializeDocument">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>serializeDocument
+        <span class="apidocSignatureSpan">(doc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">serializeDocument = function (doc) {
+  return domToHtml(doc, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-jsdom.applyDocumentFeatures" id="apidoc.module.node-jsdom.applyDocumentFeatures">module node-jsdom.applyDocumentFeatures</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.applyDocumentFeatures.applyDocumentFeatures" id="apidoc.element.node-jsdom.applyDocumentFeatures.applyDocumentFeatures">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>applyDocumentFeatures
+        <span class="apidocSignatureSpan">(doc, features)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">applyDocumentFeatures = function (doc, features) {
+  var i, maxFeatures = exports.availableDocumentFeatures.length,
+      defaultFeatures = exports.defaultDocumentFeatures,
+      j,
+      k,
+      featureName,
+      featureSource;
+
+  features = features || {};
+
+  for (i=0; i&#x3c;maxFeatures; i++) {
+    featureName = exports.availableDocumentFeatures[i];
+    if (typeof features[featureName] !== &#x27;undefined&#x27;) {
+      featureSource = features[featureName];
+    // We have to check the lowercase version also because the Document feature
+    // methods convert everything to lowercase.
+    } else if (typeof features[featureName.toLowerCase()] !== &#x27;undefined&#x27;) {
+      featureSource = features[featureName.toLowerCase()];
+    } else if (defaultFeatures[featureName]) {
+      featureSource = defaultFeatures[featureName];
+    } else {
+      continue;
+    }
+
+    doc.implementation._removeFeature(featureName);
+
+    if (typeof featureSource !== &#x27;undefined&#x27;) {
+      if (featureSource instanceof Array) {
+        k = featureSource.length;
+        for (j=0; j&#x3c;k; j++) {
+          doc.implementation._addFeature(featureName, featureSource[j]);
+        }
+      } else {
+        doc.implementation._addFeature(featureName, featureSource);
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-jsdom.env" id="apidoc.module.node-jsdom.env">module node-jsdom.env</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.env.env" id="apidoc.element.node-jsdom.env.env">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>env
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">env = function () {
+  var config = getConfigFromArguments(arguments);
+
+  if (config.file &#x26;&#x26; canReadFilesFromFS) {
+    fs.readFile(config.file, &#x27;utf-8&#x27;, function (err, text) {
+      if (err) {
+        if (config.created) {
+          config.created(err);
+        }
+        if (config.done) {
+          config.done([err]);
+        }
+        return;
+      }
+
+      setParsingModeFromExtension(config, config.file);
+
+      config.html = text;
+      processHTML(config);
+    });
+  } else if (config.html !== undefined) {
+    processHTML(config);
+  } else if (config.url) {
+    handleUrl(config);
+  } else if (config.somethingToAutodetect !== undefined) {
+    var url = URL.parse(config.somethingToAutodetect);
+    if (url.protocol &#x26;&#x26; url.hostname) {
+      config.url = config.somethingToAutodetect;
+      handleUrl(config.somethingToAutodetect);
+    } else if (canReadFilesFromFS) {
+      fs.readFile(config.somethingToAutodetect, &#x27;utf-8&#x27;, function (err, text) {
+        if (err) {
+          // the toString() test is because in Node.js, there is no proper code for this.
+          // This is fixed in io.js: https://github.com/iojs/io.js/issues/517 so:
+          // TODO: remove when we start requiring io.js
+          if (err.code === &#x27;ENOENT&#x27; || err.code === &#x27;ENAMETOOLONG&#x27;
+          	|| (err.toString() == &#x27;Error: Path must be a string without null bytes.&#x27;)
+          ) {
+            config.html = config.somethingToAutodetect;
+            processHTML(config);
+          } else {
+            if (config.created) {
+              config.created(err);
+            }
+            if (config.done) {
+              config.done([err]);
+            }
+          }
+        } else {
+          setParsingModeFromExtension(config, config.somethingToAutodetect);
+
+          config.html = text;
+          config.url = toFileUrl(config.somethingToAutodetect);
+          processHTML(config);
+        }
+      });
+    } else {
+      config.html = config.somethingToAutodetect;
+      processHTML(config);
+    }
+  }
+
+  function handleUrl() {
+    var options = {
+      uri: config.url,
+      encoding: config.encoding || &#x27;utf8&#x27;,
+      headers: config.headers || {},
+      proxy: config.proxy || null,
+      jar: config.jar !== undefined ? config.jar : true
+    };
+
+    request(options, function (err, res, responseText) {
+      if (err) {
+        if (config.created) {
+          config.created(err);
+        }
+        if (config.done) {
+          config.done([err]);
+        }
+        return;
+      }
+
+      // The use of `res.request.uri.href` ensures that `window.location.href`
+      // is updated when `request` follows redirects.
+      config.html = responseText;
+      config.url = res.request.uri.href;
+
+      if (config.parsingMode === &#x22;auto&#x22; &#x26;&#x26; (
+        res.headers[&#x22;content-type&#x22;] === &#x22;application/xml&#x22; ||
+        res.headers[&#x22;content-type&#x22;] === &#x22;text/xml&#x22; ||
+        res.headers[&#x22;content-type&#x22;] === &#x22;application/xhtml+xml&#x22;)) {
+        config.parsingMode = &#x22;xml&#x22;;
+      }
+
+      processHTML(config);
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+You can use it with a URL
+
+```js
+// Count all of the links from the Node.js build page
+var jsdom = require(&#x22;node-jsdom&#x22;);
+
+jsdom.<span class="apidocCodeKeywordSpan">env</span>(
+  &#x22;http://nodejs.org/dist/&#x22;,
+  [&#x22;http://code.jquery.com/jquery.js&#x22;],
+  function (errors, window) {
+    console.log(&#x22;there have been&#x22;, window.$(&#x22;a&#x22;).length, &#x22;nodejs releases!&#x22;);
+  }
+);
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-jsdom.getVirtualConsole" id="apidoc.module.node-jsdom.getVirtualConsole">module node-jsdom.getVirtualConsole</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.getVirtualConsole.getVirtualConsole" id="apidoc.element.node-jsdom.getVirtualConsole.getVirtualConsole">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>getVirtualConsole
+        <span class="apidocSignatureSpan">(window)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getVirtualConsole = function (window) {
+  return window._virtualConsole;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Forward a window&#x27;s console output to the Node.js console
+
+```js
+var jsdom = require(&#x22;node-jsdom&#x22;);
+var window = jsdom.jsdom().parentWindow;
+
+jsdom.<span class="apidocCodeKeywordSpan">getVirtualConsole</span>(window).sendTo(console);
+```
+
+#### Get an event emitter for a window&#x27;s console
+
+```js
+var jsdom = require(&#x22;node-jsdom&#x22;);
+var window = jsdom.jsdom().parentWindow;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-jsdom.jQueryify" id="apidoc.module.node-jsdom.jQueryify">module node-jsdom.jQueryify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.jQueryify.jQueryify" id="apidoc.element.node-jsdom.jQueryify.jQueryify">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>jQueryify
+        <span class="apidocSignatureSpan">(window, jqueryUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">jQueryify = function (window, jqueryUrl, callback) {
+  if (!window || !window.document) {
+    return;
+  }
+
+  var features = window.document.implementation._features;
+  window.document.implementation._addFeature(&#x27;FetchExternalResources&#x27;, [&#x27;script&#x27;]);
+  window.document.implementation._addFeature(&#x27;ProcessExternalResources&#x27;, [&#x27;script&#x27;]);
+  window.document.implementation._addFeature(&#x27;MutationEvents&#x27;, [&#x27;2.0&#x27;]);
+
+  var scriptEl = window.document.createElement(&#x27;script&#x27;);
+  scriptEl.className = &#x27;jsdom&#x27;;
+  scriptEl.src = jqueryUrl;
+  scriptEl.onload = scriptEl.onerror = function () {
+    window.document.implementation._features = features;
+
+    if (callback) {
+      callback(window, window.jQuery);
+    }
+  };
+
+  window.document.body.appendChild(scriptEl);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### jQueryify
+
+```js
+var jsdom = require(&#x22;node-jsdom&#x22;);
+var window = jsdom.jsdom().parentWindow;
+
+jsdom.<span class="apidocCodeKeywordSpan">jQueryify</span>(window, &#x22;http://code.jquery.com/jquery-2.1.1.js&#x22;, function () {
+  window.$(&#x22;body&#x22;).append(&#x27;&#x3c;div class=&#x22;testing&#x22;&#x3e;Hello World, It works&#x3c;/div&#x3e;&#x27;);
+
+  console.log(window.$(&#x22;.testing&#x22;).text());
+});
+```
+
+### Passing objects to scripts inside the page
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-jsdom.jsdom" id="apidoc.module.node-jsdom.jsdom">module node-jsdom.jsdom</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.jsdom.jsdom" id="apidoc.element.node-jsdom.jsdom.jsdom">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>jsdom
+        <span class="apidocSignatureSpan">(html, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">jsdom = function (html, options) {
+  if (options === undefined) {
+    options = {};
+  }
+  if (options.parsingMode === undefined || options.parsingMode === &#x27;auto&#x27;) {
+    options.parsingMode = &#x27;html&#x27;;
+  }
+
+  var browser = browserAugmentation(dom, options);
+  var doc = new browser.HTMLDocument(options);
+
+  if (options.created) {
+    options.created(null, doc.parentWindow);
+  }
+
+  features.applyDocumentFeatures(doc, options.features);
+
+  if (html === undefined) {
+    html = &#x27;&#x27;;
+  }
+  html = String(html);
+  doc.write(html);
+
+  if (doc.close &#x26;&#x26; !options.deferClose) {
+    doc.close();
+  }
+
+  return doc;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+#### Dealing with asynchronous script loading
+
+If you load scripts asynchronously, e.g. with a module loader like RequireJS, none of the above hooks will really give you what
+you want. There&#x27;s nothing, either in jsdom or in browsers, to say &#x22;notify me after all asynchronous loads have completed
+.&#x22; The solution is to use the mechanisms of the framework you are using to notify about this finishing up. E.g., with RequireJS
+, you could do
+
+```js
+// On the Node side:
+var window = jsdom.<span class="apidocCodeKeywordSpan">jsdom</span>(...).parentWindow;
+window.onModulesLoaded = function () {
+  console.log(&#x22;ready to roll!&#x22;);
+};
+```
+
+```html
+&#x3c;!-- Inside the HTML you supply to jsdom --&#x3e;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.jsdom.env" id="apidoc.element.node-jsdom.jsdom.env">
+        function <span class="apidocSignatureSpan">node-jsdom.jsdom.</span>env
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">env = function () {
+  var config = getConfigFromArguments(arguments);
+
+  if (config.file &#x26;&#x26; canReadFilesFromFS) {
+    fs.readFile(config.file, &#x27;utf-8&#x27;, function (err, text) {
+      if (err) {
+        if (config.created) {
+          config.created(err);
+        }
+        if (config.done) {
+          config.done([err]);
+        }
+        return;
+      }
+
+      setParsingModeFromExtension(config, config.file);
+
+      config.html = text;
+      processHTML(config);
+    });
+  } else if (config.html !== undefined) {
+    processHTML(config);
+  } else if (config.url) {
+    handleUrl(config);
+  } else if (config.somethingToAutodetect !== undefined) {
+    var url = URL.parse(config.somethingToAutodetect);
+    if (url.protocol &#x26;&#x26; url.hostname) {
+      config.url = config.somethingToAutodetect;
+      handleUrl(config.somethingToAutodetect);
+    } else if (canReadFilesFromFS) {
+      fs.readFile(config.somethingToAutodetect, &#x27;utf-8&#x27;, function (err, text) {
+        if (err) {
+          // the toString() test is because in Node.js, there is no proper code for this.
+          // This is fixed in io.js: https://github.com/iojs/io.js/issues/517 so:
+          // TODO: remove when we start requiring io.js
+          if (err.code === &#x27;ENOENT&#x27; || err.code === &#x27;ENAMETOOLONG&#x27;
+          	|| (err.toString() == &#x27;Error: Path must be a string without null bytes.&#x27;)
+          ) {
+            config.html = config.somethingToAutodetect;
+            processHTML(config);
+          } else {
+            if (config.created) {
+              config.created(err);
+            }
+            if (config.done) {
+              config.done([err]);
+            }
+          }
+        } else {
+          setParsingModeFromExtension(config, config.somethingToAutodetect);
+
+          config.html = text;
+          config.url = toFileUrl(config.somethingToAutodetect);
+          processHTML(config);
+        }
+      });
+    } else {
+      config.html = config.somethingToAutodetect;
+      processHTML(config);
+    }
+  }
+
+  function handleUrl() {
+    var options = {
+      uri: config.url,
+      encoding: config.encoding || &#x27;utf8&#x27;,
+      headers: config.headers || {},
+      proxy: config.proxy || null,
+      jar: config.jar !== undefined ? config.jar : true
+    };
+
+    request(options, function (err, res, responseText) {
+      if (err) {
+        if (config.created) {
+          config.created(err);
+        }
+        if (config.done) {
+          config.done([err]);
+        }
+        return;
+      }
+
+      // The use of `res.request.uri.href` ensures that `window.location.href`
+      // is updated when `request` follows redirects.
+      config.html = responseText;
+      config.url = res.request.uri.href;
+
+      if (config.parsingMode === &#x22;auto&#x22; &#x26;&#x26; (
+        res.headers[&#x22;content-type&#x22;] === &#x22;application/xml&#x22; ||
+        res.headers[&#x22;content-type&#x22;] === &#x22;text/xml&#x22; ||
+        res.headers[&#x22;content-type&#x22;] === &#x22;application/xhtml+xml&#x22;)) {
+        config.parsingMode = &#x22;xml&#x22;;
+      }
+
+      processHTML(config);
+    });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+You can use it with a URL
+
+```js
+// Count all of the links from the Node.js build page
+var jsdom = require(&#x22;node-jsdom&#x22;);
+
+jsdom.<span class="apidocCodeKeywordSpan">env</span>(
+  &#x22;http://nodejs.org/dist/&#x22;,
+  [&#x22;http://code.jquery.com/jquery.js&#x22;],
+  function (errors, window) {
+    console.log(&#x22;there have been&#x22;, window.$(&#x22;a&#x22;).length, &#x22;nodejs releases!&#x22;);
+  }
+);
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.jsdom.jQueryify" id="apidoc.element.node-jsdom.jsdom.jQueryify">
+        function <span class="apidocSignatureSpan">node-jsdom.jsdom.</span>jQueryify
+        <span class="apidocSignatureSpan">(window, jqueryUrl, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">jQueryify = function (window, jqueryUrl, callback) {
+  if (!window || !window.document) {
+    return;
+  }
+
+  var features = window.document.implementation._features;
+  window.document.implementation._addFeature(&#x27;FetchExternalResources&#x27;, [&#x27;script&#x27;]);
+  window.document.implementation._addFeature(&#x27;ProcessExternalResources&#x27;, [&#x27;script&#x27;]);
+  window.document.implementation._addFeature(&#x27;MutationEvents&#x27;, [&#x27;2.0&#x27;]);
+
+  var scriptEl = window.document.createElement(&#x27;script&#x27;);
+  scriptEl.className = &#x27;jsdom&#x27;;
+  scriptEl.src = jqueryUrl;
+  scriptEl.onload = scriptEl.onerror = function () {
+    window.document.implementation._features = features;
+
+    if (callback) {
+      callback(window, window.jQuery);
+    }
+  };
+
+  window.document.body.appendChild(scriptEl);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### jQueryify
+
+```js
+var jsdom = require(&#x22;node-jsdom&#x22;);
+var window = jsdom.jsdom().parentWindow;
+
+jsdom.<span class="apidocCodeKeywordSpan">jQueryify</span>(window, &#x22;http://code.jquery.com/jquery-2.1.1.js&#x22;, function () {
+  window.$(&#x22;body&#x22;).append(&#x27;&#x3c;div class=&#x22;testing&#x22;&#x3e;Hello World, It works&#x3c;/div&#x3e;&#x27;);
+
+  console.log(window.$(&#x22;.testing&#x22;).text());
+});
+```
+
+### Passing objects to scripts inside the page
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-jsdom.serializeDocument" id="apidoc.module.node-jsdom.serializeDocument">module node-jsdom.serializeDocument</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-jsdom.serializeDocument.serializeDocument" id="apidoc.element.node-jsdom.serializeDocument.serializeDocument">
+        function <span class="apidocSignatureSpan">node-jsdom.</span>serializeDocument
+        <span class="apidocSignatureSpan">(doc)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">serializeDocument = function (doc) {
+  return domToHtml(doc, true);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
