@@ -1,4 +1,7 @@
-# api documentation for  [node-jsdom (v3.1.5)](https://github.com/darrylwest/node-jsdom)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-jsdom.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-jsdom) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-jsdom.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-jsdom)
+# npmdoc-node-jsdom
+
+#### api documentation for  [node-jsdom (v3.1.5)](https://github.com/darrylwest/node-jsdom)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-jsdom.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-jsdom) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-jsdom.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-jsdom)
+
 #### A JavaScript implementation of the DOM and HTML standards cloned from the original jsdom branch 3.x
 
 [![NPM](https://nodei.co/npm/node-jsdom.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/node-jsdom)
